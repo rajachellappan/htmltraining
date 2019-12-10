@@ -1,0 +1,28 @@
+/*******************************************************************************************
+*File				:EX3.1.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to store customer's details
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+RECORD Customer
+ DECLARE customerid AS INTEGER
+ DECLARE name AS STRING
+ DECLARE age AS INTEGER
+END RECORD
+
+BEGIN
+	DECLARE customer1 AS Customer
+	FOR index=1 TO 5
+		PROMPT "Enter the customerid" AND STORE IN customer1.customerid
+		PROMPT "Enter the name" AND STORE IN customer1.name
+		PROMPT "Enter the age" AND STORE IN customer1.age
+	END FOR
+	FOR index= 1 To 5
+		PRINT "Customer id", customer1.customerid
+		PRINT "Customer name", customer1.name
+		PRINT "Customer age", customer1.age
+	END FOR
+END
+	

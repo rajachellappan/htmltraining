@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<title>My Table</title>
+</head>
+<body bgcolor="skyblue">  
+<form align="center" name="myform" method="post" action="1.html">
+<h3>Register</h3 >
+<table border="1" align="center" height="500">
+<tr>
+<td>NAME</td>
+<td><input type="text" name="mytext" placeholder="Enter Your Name" pattern="[a-Z]"required/></td>
+</tr>
+<tr>
+<td>Description</td>
+<td><textarea rows="5" cols="40"></textarea></td>
+</tr>
+<tr>
+<td>PASSWORD</td>
+<td><input type="password" name="mypasssword" placeholder="Enter Your Password" pattern="[5-10]{4}[a-z]{1,4}" required></td>
+</tr>
+<tr>
+<tr>
+<td>Email</td>
+<td><input type="email" name="myemail" placeholder="Enter Your email"  required></td>
+</tr>
+<tr>
+<td>color</td>
+<td><input type="color" name="mycolor" ></td>
+</tr>
+<tr>
+<td>date</td>
+<td><input type="date" name="mydate" min="2015-01-26" max="2015-09-07"></td>
+</tr>
+<tr>
+<tr>
+<td>Country</td>
+<td><input type="text" name="mycountry" list="country" >
+<datalist id="country" >
+<option value="Australia">
+<option value="India">
+<option value="United States of America">
+<option value="England">
+<option value="France">
+</datalist>
+
+</td>
+</tr>
+<tr>
+<td>QUALIFICATION</td>
+<td><select name="myqualification" size="4" required>
+<option>Select your qualification</option>
+<option value="BE">BE</option>
+<option value="BSc">BSc</option>
+<option value="MCA">MCA</option>
+<option value="MS/MTECH">MS/MTECH</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>COURSE</td>
+<td><input type="checkbox" name="java" >JAVA
+<input type="checkbox" name="testing" >TESTING
+<input type="checkbox" name="net" >.NET
+<input type="checkbox" name="main" >MAINFRAME</td>
+</tr>
+<tr>
+<td>GENDER</td>
+<td><input type="radio" name="gender" required >MALE
+<input type="radio" name="gender" required>FEMALE</td>
+</tr>
+<tr align="center">
+<td><input type="submit" "name="mycheck"></td>
+<td><input type="reset" "name="myreset"></td>
+</tr>
+<tr>
+<td>AGE</td>
+<td><input type="number" min="18" max="25" name="mypass" value="18"></td>
+</tr>
+<tr>
+<td>RANGE</td>
+<td><input type="range"></td>
+</tr>
+
+<tr>
+<td>Upload</td>
+<td><input type="file" name="myupload" required></td>
+</tr>
+<tr>
+<td>video</td>
+<td><video src="small.ogv" height="400"width="800" controls/></td>
+</tr>
+<tr>
+<td>audio</td>
+<td><audio src="m.ogv"  controls/></td>
+</tr>
+
+</form>
+
+
+
+
+</body>
+</html>

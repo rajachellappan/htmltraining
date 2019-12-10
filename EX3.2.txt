@@ -1,0 +1,27 @@
+/*******************************************************************************************
+*File				:EX3.2.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to read data from a file and display it
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE file AS FILE	
+	DECLARE readData AS STRING
+	PROMPT "Enter the filename" AND STORE IN file
+	IF(fileExists(file)) THEN
+		OPEN file
+		IF(fileSize(file)!=0) THEN
+			WHILE file!=EOF
+			DO
+				READ data from file AND STORE IN readData
+				DISPLAY readData
+			END WHILE
+		ELSE
+			PRINT "File is Empty"
+		END IF
+	ELSE 
+		PRINT "File doesn't exists"
+	END IF
+END

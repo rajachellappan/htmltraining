@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>my first javascript form</title>
+	<script language="javascript" src="myform.js">
+	</script>
+	</head>
+	<body>
+	<form name="myform" method="post" onSubmit="myValidation()">
+	Name
+	<input type="text" name="jname" required/><br><br>
+	Password
+	<input type="password" name="jpass"required/><br><br>
+	Qualification
+	<select name="qualification" required>
+	<option value="se">Select your Qualification</option>
+	<option value="be">BE</option>
+	<option value="bsc">Bsc</option>
+	<option value="MCa">MCA</option>
+	<option value="ms">MS/MTech</option></select><br><br>
+	Gender
+
+	<input type="radio" name="gender" value="male" >Male</input>
+	<input type="radio" name="gender" value="female">Female</input>
+<br><br>
+	<button type="submit">Validate</button>
+	</form>
+	</body>
+</html>

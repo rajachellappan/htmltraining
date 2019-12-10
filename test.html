@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Profit Details</title>
+<link rel="stylesheet" href="teststyle.css" type="text/css">
+<script language="javascript" src="testscript.js">
+</script>
+</head>
+<body>
+<h1 align='center'>EMPLOYEE DETAILS</h1>
+<form name="myform" method="post" align="center" >
+<table  align="center"  cellspacing="10" cellpadding="2" style="border-color:white" height="200" width="2000" >
+
+<tr>
+<td align="left"><b>Title:</b></td>
+<td align="left">
+<select name="titl" >
+<option >[Select Title]</option>
+<option>Mr.</option>
+<option>Mrs.</option>
+<option>Ms.</option>
+</select></td>
+</tr>
+
+<tr>
+<td align="left"><b>First Name:</b></td>
+<td align="left"><input type="text" name="efname" maxlength="8" placeholder="Enter First Name" required></input></td>
+</tr>
+
+<tr>
+<td align="left"><b>Last Name:</b></td>
+<td align="left"><input type="text" name="elname" maxlength="7" placeholder="Enter Last Name" required></input></td>
+</tr>
+
+<tr>
+<td align="left"><b>Gross Salary:</b></td>
+<td align="left"><input type="number" name="gros" placeholder="Enter Gross Salary" required></input></td>
+</tr>
+
+<tr>
+<td align="left"><b>Address:</b></td>
+<td align="left"><textarea rows="5" cols="40" name="addr" placeholder="Enter Your Address" required></textarea></td>
+</tr>
+
+
+<tr>
+
+<td align="left" ><button  onclick="Valido()">Submit</button></td>
+<td align="left" ><button onclick="salcal()" >Salary Slip</button></td>
+
+
+</tr>
+
+<tr>
+
+<td align="left" colspan="2"><hr color="clack"></td>
+</tr>
+
+
+</table>
+</form>
+</body>
+</html>
