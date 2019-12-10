@@ -1,0 +1,33 @@
+/*******************************************************************************************
+*File				:A2.2.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to find the sum of digits of a given number
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE num AS INTEGER
+	DECLARE sum, sum2 AS INTEGER ANS STORE 0
+	PROMPT "Enter Number" AND STORE IN num
+	SumOfDigits(num);
+END
+
+/*******************************************************************************************
+*Module Name			:SumOfDigits()
+*Input parameters		:num
+*Return Type			:INTEGER
+*Author			        :Raja C
+*Creation Date			:01-Sept-2015
+*Description			:Summation of digits of a number 
+*******************************************************************************************/
+BEGIN
+
+SUB SumOfDigits(num)
+	WHILE(num!=0)
+		CALCULATE sum2=num%10
+		CALCULATE sum=sum2+sum
+		CALCULATE num=num/10
+	END WHILE
+	RETURN sum
+END SUB

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>Candidate Information</TITLE>
+	</HEAD>
+	
+<BODY bgcolor="skyblue">
+<FORM action="mailto:empinfo@igate.com" name="ab" method="post" enctype="multipart/form-data" >
+<TABLE align="center" height="500" style="border-style:double" border="2">
+<h1 align="center">Candidate Information</h1>
+<tr>
+<td align="center">Name:*</td>
+<td><input type="text" name="mytext" placeholder="Enter Your Name" maxlength="15" pattern="[a-Z]{15}" required/></td>
+</tr>
+<tr>
+<td align="center">Password:*</td>
+<td><input type="password" placeholder="Enter Your Password" name="mypassword" maxlength="15"   required></td>
+</tr>
+<tr>
+<td align="center">Phone Number:*</td>
+<td><input  type="phonenumber" pattern="[0-9]{10}" maxlength="10" name="mynumber" placeholder="Enter Your Phone Number" required>
+</td>
+</tr>
+<tr>
+<td align="center">GENDER:*</td>
+<td><input type="radio" name="gender" required >MALE
+<input type="radio" name="gender" required>FEMALE</td>
+</tr>
+<tr>
+<td align="center">Date Of Birth:*</td>
+<td><input type="date" name="mydate" min="1993-01-01" max="2015-09-07"></td>
+</tr>
+<tr>
+<td align="center">Email:*</td>
+<td><input type="email" name="myemail" placeholder="Enter Your email"  required></td>
+</tr>
+<tr>
+<td align="center">Highest Qualification:*</td>
+<td><select name="myqualification" required>
+<option>Select Highest Qualification</option>
+<option value="BE">BE</option>
+<option value="BSc">BSc</option>
+<option value="MCA">MCA</option>
+<option value="MS/MTECH">MS/MTECH</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="center">Courses Interested in:*</td>
+<td><input type="checkbox" name="java" required>JAVA
+<input type="checkbox" name="html" >HTML 5
+<input type="checkbox" name="css" >CSS 3
+<input type="checkbox" name="js" >ANGULAR JS</td>
+</tr>
+<tr>
+<td align="center">Comments:</td>
+<td><textarea name="xt" rows="5" cols="40" tabindex="0" accesskey="A" placeholder="Mention External Certification if any" ></textarea>
+</td>
+</tr>
+<tr>
+<td align="center">Upload Degree/External Certificates:*</td>
+<td><input type="file" name="myupload" required></td>
+</tr>
+<tr align="center">
+<td></td>
+<td><button type="submit">Submit Information</button><button type="reset">Clear</button></td>
+</tr>
+
+</table>
+<footer align="center">
+All fields marked(*) are mandatory
+</footer>
+</FORM>
+</BODY>
+</HTML>

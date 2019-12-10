@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Employeedetails>
+  <Employee code="1111">
+  
+  <Employee-name>
+    <First_name>Seema</First_name>
+    <Last-name>Dalvi</Last-name>
+  </Employee-name>
+  <DOJ>09/08/97</DOJ>
+  <Total-Experience>12</Total-Experience>
+  <Department>
+    <unit>3d</unit>
+    <LOC>Mumbai</LOC>
+  </Department>
+  <Designation>4</Designation>
+  <sal>21000</sal>
+  <Grade>b</Grade>
+  </Employee>
+  <Employee code="222">
+
+    <Employee-name>
+      <First_name>Bharati</First_name>
+      <Last-name>Mantri</Last-name>
+    </Employee-name>
+    <DOJ>12/01/99</DOJ>
+    <Total-Experience>5</Total-Experience>
+    <Department>
+      <unit>4a</unit>
+      <LOC>pune</LOC>
+    </Department>
+    <Designation>2</Designation>
+    <sal>12000</sal>
+    <Grade>a</Grade>
+  </Employee>
+</Employeedetails>

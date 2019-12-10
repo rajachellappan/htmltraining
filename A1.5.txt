@@ -1,0 +1,21 @@
+/*******************************************************************************************
+*File				:A1.5.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to convert binary to decimal number
+*Version			:1.0                            
+*Last Modified Date		:31-Aug-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE num,p,x AS INTEGER
+	INITIALIZE temp TO 0
+	INTIALIZE x TO 1
+	WHILE(num != 0)
+		p=num%10
+		p=p*x
+		num=num/10
+		x=x*2
+		temp=temp+p
+	END WHILE
+	DISPLAY temp
+END

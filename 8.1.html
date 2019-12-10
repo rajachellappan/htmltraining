@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>My window Example</title>
+<script language="javascript" src="product.js">
+</script>
+</head>
+<body>
+<form name="myform" method="post" >
+<table  align="center"  cellspacing="8" cellpadding="10" style="border-color:white" height="500" width="500" >
+<tr>
+<td align="left" colspan="2">Enter Loan Information:</td>
+</tr>
+
+<tr>
+<td align="left">1)Amount of the loan(any currency):</td>
+<td align="center"><input type="number" name="amount" required></input></td>
+</tr>
+
+<tr>
+<td align="left">2)Annual percentage rate of interest:</td>
+<td align="center"><input type="number" name="rate" required></input></td>
+</tr>
+
+<tr>
+<td align="left">3)Repayment period in years:</td>
+<td align="center"><input type="number" name="period" required></input></td>
+</tr>
+
+<td align="center" colspan="2"><button type="submit" onclick="return Compute()">Compute</button></td>
+
+<tr>
+<td align="left" colspan="2">Payment Information:</td>
+</tr>
+
+<tr>
+<td align="left">4)Your monthly payment will be:</td>
+<td align="center"><input type="number" name="monthly" id="monthly" ></input></td>
+</tr>
+
+<tr>
+<td align="left">5)Your total payment will be:</td>
+<td align="center"><input type="number" name="totalpay" id="totalpay"></input></td>
+</tr>
+
+<tr>
+<td align="left">6 )Your total interest payments will be:</td>
+<td align="center"><input type="number" name="totalint" id="totalint"></input></td>
+</tr>
+
+
+
+</table>
+</form>
+</body>
+</html>

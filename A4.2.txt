@@ -1,0 +1,25 @@
+/**********************************************************************************************************
+*File				:A4.2.txt
+*Author Name			:Raja C
+*Description			:Answers for Difference of two numbers algorithm 
+*Version			:1.0
+*Last Modified Date		:02-Sept-2015
+*Change Description		:Initial version created
+**********************************************************************************************************/
+
+ALGORITHM surprise(A[0..n-1])
+//input: An array A[0..n-1] of n real numbers
+if n=1
+   return A[O]
+else
+   t<-surprise(A[0..n-2])
+   if t<=A[n-1]
+	return t
+   else
+	return A[n-1]
+
+---> Q:Determine the output of the algorithm by tracing it for the taking any sample input and find its efficiency.
+     A: For a given input array of numbers the algorithm returns all the numbers except the biggest number in the array
+	for example
+	sample input { 4 8 3 7 }
+	the output is 4,3,7

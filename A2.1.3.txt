@@ -1,0 +1,27 @@
+/*********************************************************************************************************************************
+*File				:A2.1.3.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to calculate electricity bill
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*********************************************************************************************************************************/
+BEGIN
+	DECLARE CONSTANT fixed_rate=100
+	DECLARE userid, lastmonth_reading, currentmonth_reading, unit_used, net_amt  AS INTEGER
+	DECLARE username AS CHARACTER
+	PROMPT "Enter User ID" AND STORE IN userid	
+	PROMPT "Enter User Name" AND STORE IN username
+	PROMPT "Enter last month meter reading " AND STORE IN lastmonth_reading
+	PROMPT "Enter current month meter reading " AND STORE IN currentmonth_reading
+	CALCULATE unit_used=(lastmonth_reading)-(currentmonth_reading)		//accepts details from the user
+	CALCULATE net_amt=(unit_used*1.15)+fixed_rate
+	PRINT "USER ID:", userid;
+	PRINT "USER NAME:", username;
+	PRINT "LAST MONTH READING:", lastmonth_reading;
+	PRINT "CURRENT MONTH READING:", currentmonth_reading;
+	PRINT "NET ELECTRICITY BILL IS Rs.", net_amt;   //calculates and displays the net electricity bill
+END
+
+
+	

@@ -1,0 +1,44 @@
+/**********************************************************************************************************
+*File				:A4.7.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to find a substring of a string
+*Version			:1.0
+*Last Modified Date		:02-Sept-2015
+*Change Description		:Initial version created
+**********************************************************************************************************/
+BEGIN
+	DECLARE string1, string2 AS STRING
+	DECLARE charat[] AS CHARACTER ARRAY
+	PROMPT "Enter first string:" AND STORE IN string1
+	PROMPT "Enter second string:" AND STORE IN string2
+	substring(string1,string2)
+END
+
+
+/*******************************************************************************************
+*Module Name			:substring()
+*Input parameters		:string1,string2
+*Return Type			:BOOLEAN
+*Author			        :Raja C
+*Creation Date			:02-Sept-2015
+*Description			:Finding whether second string is a substring of first
+*******************************************************************************************/
+SUB substring(string1,string2)
+	DECLARE flag AS BOOLEAN AND STORE true
+	DECLARE index AS INTEGER
+	FOR index=1 TO string2.size
+		IF(string2.charat[index]==string1.charat[index+1])
+			flag=false
+		END IF
+	END FOR
+	IF(flag==true) THEN
+		PRINT "Substring found"
+		EXIT
+	ELSE IF 
+		INITIALIZE flag=true
+	ELSE IF(flag==false) THEN
+		PRINT "Substring not found"
+	END IF
+END SUB
+	
+	

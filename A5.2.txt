@@ -1,0 +1,19 @@
+/**********************************************************************************************
+*File				:A5.2.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to Calculate total price of a product including tax
+*Version			:1.0
+*Last Modified Date		:03-Sept-2015
+*Change Description		:Initial version created
+**********************************************************************************************/
+BEGIN
+	DECLARE CONSTANT taxrate AS REAL AND STORE 0.56
+	DECLARE quantity AS INTEGER
+	DECLARE price, totalcost AS REAL
+	PROMPT "Enter price of your product:" AND STORE IN price
+	PROMPT "Enter quantity of your product:" AND STORE in quantity
+	COMPUTE totalcost=price*quantity*taxrate
+	PRINT "Total price of product is:", totalcost
+END
+	
+	

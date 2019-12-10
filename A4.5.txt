@@ -1,0 +1,21 @@
+/**********************************************************************************************************
+*File				:A4.5.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to calculate the number of times a character is found in a word
+*Version			:1.0
+*Last Modified Date		:02-Sept-2015
+*Change Description		:Initial version created
+**********************************************************************************************************/
+
+BEGIN
+	DECLARE word AS STRING
+	DECLARE char AS CHARACTER
+	PROMPT "Enter the word:" AND STORE IN word
+	PROMPT "Enter the character:" AND STORE IN char
+	FOR index= 0 TO word[index]!="NULL"
+		IF(char==word[index]
+			COMPUTE count=count+1
+		END IF
+	END FOR
+		DISPLAY count
+END 

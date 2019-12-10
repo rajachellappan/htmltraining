@@ -1,0 +1,32 @@
+/*******************************************************************************************
+*File				:A2.3.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to find unique numbers from an array of numbers
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN 
+	DECLARE num[10], uni[] AS INTEGER ARRAY
+	PROMPT "Enter 10 numbers"
+	FOR i=1 TO 10
+		ACCEPT num[i]
+	END FOR
+	FOR i= 1 TO 10
+		INTITIALIZE j=i+1
+		WHILE(j>i)
+			IF(num[i]==num[j]) THEN
+ 				i=i+1
+				BREAK
+			ELSE 
+				j=j+1
+
+			END IF
+			
+		END WHILE
+		uni[]=num[i]
+	END FOR
+	PRINT arr.size(uni[])
+END
+
+

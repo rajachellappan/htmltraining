@@ -1,0 +1,24 @@
+/**********************************************************************************************************
+*File				:A4.4.txt
+*Author Name			:Raja C
+*Description			:Answers for sum of n numbers algorithm 
+*Version			:1.0
+*Last Modified Date		:02-Sept-2015
+*Change Description		:Initial version created
+**********************************************************************************************************/
+
+ALGORITHM Sum(n)
+//input: A nonnegative integers n
+sum<-0
+for index<- 1 to n
+    sum<-sum+1
+return sum
+
+
+---> Q:What does this algorithm computes?
+     A:This algorithm computes the sum of n numbers.
+
+---> Q:What is the efficiency class of the given algorithm?
+     A:O(n)
+
+    

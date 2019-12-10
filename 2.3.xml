@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library>
+  <Book>
+    <Title>Dead to the world</Title>
+    <Author>Charlaine Harris</Author>
+    <Publisher>ABC Publishing Company</Publisher>
+    <cover cover_type="Hardbook"></cover>
+    <Category cat_type="Horror"></Category>
+    <ISBN isbn_num="Z1"></ISBN>
+    <Rating rate_Val="5"></Rating>
+    <Price>$13.9</Price>
+    <Comments>A good book</Comments>
+  </Book>
+  <Book>
+    <Title>GArdens to the world</Title>
+    <Author>Steven Erikson</Author>
+    <Publisher>XYZ Publishing Company</Publisher>
+    <cover cover_type="Hardbook"></cover>
+    <Category cat_type="SCI-FI"></Category>
+    <ISBN isbn_num="Z3"></ISBN>
+    <Rating rate_Val="4"></Rating>
+    <Price>$17.65</Price>
+    <Comments>A wonderful book</Comments>
+  </Book>
+ </Library>

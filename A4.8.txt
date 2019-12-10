@@ -1,0 +1,79 @@
+/******************************************************************************************************
+*File				:A4.8.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to store and search student's details
+*Version			:1.0
+*Last Modified Date		:02-Sept-2015
+*Change Description		:Initial version created
+******************************************************************************************************/
+RECORD Student
+ 	DECLARE studentid AS INTEGER
+ 	DECLARE studentname AS STRING
+ 	DECLARE marks AS INTEGER
+END RECORD
+
+BEGIN
+	DECLARE choice, sid AS INTEGER
+	DECLARE marks[] AS INTEGER ARRAY
+	DECLARE student1 AS Student
+	PRINT "ENTER YOUR CHOICE"
+	PRINT "1.ADD STUDENT DETAILS"
+	PRINT "2.VIEW STUDENT DETAILS"	
+	PRINT "3.STUDENT DIRECTORY"
+	PRINT "4.STUDENTS' RANK"
+	ACCEPT choice
+	WHILE(choice!=0)
+		IF(choice==1) THEN 
+			FOR index=1 TO 5
+				PROMPT "Enter the Student ID" AND STORE IN student1.studentid
+				PROMPT "Enter the Student's Name" AND STORE IN student1.studentname
+				PROMPT "Enter the Student's Marks" AND STORE IN student1.marks
+			END FOR
+	
+		ELSE IF(choice==2) THEN
+			FOR index= 1 To 5
+				PRINT "Student ID:", student1.studentid
+				PRINT "Student's Name:", student1.studentname
+				PRINT "Student's Marks", student1.marks
+			END FOR
+	
+		ELSE IF(choice==3) THEN
+			PROMPT "Student ID:" AND STORE IN sid
+			FOR index=1 To 5
+				IF(sid==student1.studentid)
+					PRINT "Student ID:", student1.studentid
+					PRINT "Student's Name:", student1.studentname
+					PRINT "Student's Marks", student1.marks
+				ELSE
+					RAISE NoSuchElement("ID INVALID"+sid)
+				END IF
+			END FOR
+		
+		ELSE IF(choice==4) THEN
+			FOR index= 1 TO 5
+				marks[index]=student1.marks
+			END FOR 
+			FOR index=1 TO 5
+				FOR index= 1 TO 4
+					IF(marks[index]<marks[index+1]) THEN
+						SWAP marks[index] AND marks[index+1]
+					ELSE 
+						CONTINUE
+					END IF
+				END FOR
+			END FOR
+			FOR index= 1 TO 5
+				IF(marks[index]==student1.marks) THEN
+					PRINT "Student ID:", student1.studentid
+					PRINT "Student's Name:", student1.studentname
+					PRINT "Student's Marks", student1.marks
+				ELSE 
+					CONTINUE
+				END IF
+		
+		ELSE
+			RAISE NoSuchElement("CHOICE INVALID!!"+choice)
+		END IF
+	END WHILE			
+END
+	

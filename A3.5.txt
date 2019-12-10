@@ -1,0 +1,34 @@
+/*******************************************************************************************
+*File				:A3.2.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to find total leaves available for an emplyoee
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+RECORD Employee
+	DECLARE Empid as INTEGER
+	DECLARE employmentType As STRING
+END RECORD
+
+BEGIN
+	DECLARE emp AS Employee
+	DECLARE leaves, TotalLeaves AS INTEGER
+	FOR index=1 to 5
+		PROMPT "Enter the EmployeeId" AND STORE IN emp.Empid
+		PROMPT "Enter the employmentType" AND STORE IN emp.employmentType
+	END FOR
+	FOR index= 1 TO 5
+		IF(employmentType=='PERMANENT') THEN
+			leaves=2;
+		ELSE IF(employmentType=='CONTRACT') THEN
+			leaves=1;
+		END IF
+		
+		totalLeaves=leaves*12;
+		
+		PRINT "Employee Id:", emp.Empid
+		
+	PRINT "Total Available Leaves are:", TotalLeaves
+	END FOR                                
+END

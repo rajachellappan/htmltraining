@@ -1,0 +1,15 @@
+/*******************************************************************************************
+*File				:A1.8.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to calculate electricity bill
+*Version			:1.0
+*Last Modified Date		:31-Aug-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE CONSTANT taxrate AS REAL AND STORE 0.56
+	DECLARE totalcost, price AS INTEGER
+	PROMPT "Enter price of your product" AND STORE IN price
+	CALCULATE totalcost=price*taxrate;
+	PRINT "Total price of product is:", totalcost;
+END

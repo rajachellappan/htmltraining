@@ -1,0 +1,41 @@
+/*******************************************************************************************
+*File				:A3.2.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to calculate student's Grade
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+RECORD Student
+ DECLARE studentid AS INTEGER
+ DECLARE studentname AS STRING
+ DECLARE m1,m2,m3 AS INTEGER
+END RECORD
+
+BEGIN
+	DECLARE tot AS INTEGER
+	DECLARE grade AS STRING
+	DECLARE student1 AS Student
+	PROMPT "Enter the Student's ID" AND STORE IN student1.studentid
+	PROMPT "Enter the Student's Name" AND STORE IN student1.studentname
+	PROMPT "Enter the Student's Sub1 mark" AND STORE IN student1.m1
+	PROMPT "Enter the Student's Sub2 mark" AND STORE IN student2.m2
+	PROMPT "Enter the Student's Sub3 mark" AND STORE IN student3.m3
+	CALCULATE tot=m1+m2+m3
+	IF(tot<=100 && tot>90) THEN
+		grade='A'
+	ELSE IF(tot<=89 && tot>79) THEN
+		grade='B'
+	ELSE IF(tot<=68 && tot>78) THEN
+		grade='C'
+	ELSE IF(tot>100)
+		RAISE NoSuchElement("Marks Invalid"+tot)
+	ELSE
+		grade="Fail"
+	END IF 
+   	PRINT "Student's ID:", student1.studentid
+	PRINT "Student's Name", student1.studentname
+	PRINT "Student's Grade", grade
+	
+END
+	

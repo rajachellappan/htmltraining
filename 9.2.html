@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Form Validation using Regular Expression</title>
+
+<script language="javascript" src="valid.js">
+</script>
+</head>
+<body>
+<h1 align="center">Form Validation using Regular Expression</h1>
+<form name="myform" method="post" >
+<table  align="Center"  cellspacing="10" cellpadding="2" style="border-color:white" height="500" width="500" >
+
+
+<tr>
+<td align="left"> Name:</td>
+<td align="left"><><input type="text" size="30" name="vname" ></input></td>
+</tr>
+
+<tr>
+<td align="left">Date of Birth:</td>
+<td align="left"><><input type="text" maxlength="10" size="30" name="dobo" ></input></td>
+</tr>
+
+<tr>
+<td align="left">Phone Number:</td>
+<td align="left"><><input type="text" maxlength="13" size="30" name="enumber" ></input></td>
+</tr>
+
+<tr>
+<td align="left">Email:</td>
+<td align="left"><><input type="email" size="30" name="email" ></input></td>
+</tr>
+
+<tr>
+<td align="left">Graduation Level:</td>
+<td align="left"><><input type="radio" name="grad" value="UG" onchange="myoption()">UG</input><input type="radio" name="grad" value="PG" onchange="myoption()" >PG</input></td>
+</tr>
+
+<tr>
+<td align="left">Qualification:</td>
+<td align="left"><>
+<select name="qual">
+<option name="select">Select your qualification</option>
+<option name="be" style="visibility:hidden" >BE</option>
+<option name="bsc" style="visibility:hidden" >BSc</option>
+<option name="ms" style="visibility:hidden">MS</option>
+<option name="mca" style="visibility:hidden">MCA</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td align="center" ><><button type="submit" onclick="valido()">Submit</button><></td>
+<td align="center" ><><button onclick="preview()" >Preview</button><></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

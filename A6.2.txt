@@ -1,0 +1,69 @@
+/********************************************************************************************************************************************************************************************************************
+*File				:A6.2.txt
+*Author Name			:Raja C
+*Description			:Test Cases for Lab assignment 1.2 using the test case template
+*Version			:1.0
+*Last Modified Date		:03-Sept-2015
+*Change Description		:Initial version created
+********************************************************************************************************************************************************************************************************************/
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| TEST CASE ID	|	       TEST CASE SCENARIO	       |          TEST CONDITION	  | 		TEST CASE	      |   TEST DATA  |            EXPECTED RESULT		    |  REMARKS  | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|               |					       |				  |				      |		     |						    |	        |
+|    TC_001	|    To accept the employee  experience and    |    experience less than 3        |     Enter Employee's experience   |      1	     |	  Display Message "The tag color is Blue"   |   Valid   |
+|		|    display tag color  		       |				  |				      |		     |						    |	        |
+|               |					       |				  |				      |		     |						    |	        |	
+|    TC_002	|    To accept the employee  experience and    |    experience between 3 and 5    |     Enter Employee's experience   |      4	     |	  Display Message "The tag color is Grey"   |   Valid   | 
+|		|    display tag color 			       |				  |				      |		     |						    |	        |
+|		|					       |				  |				      |		     |						    |           |
+|    TC_003	|    To accept the employee  experience and    |    experience between 5 and 10   |     Enter employee's experience   |      6	     |	  Display Message "The tag color is Yellow" |   Valid   |
+|		|    display tag color  		       |				  |				      |		     |						    |           |
+|  		|					       |				  |				      |		     |						    |           |
+|    TC_004	|    To accept the employee  experience and    |    experience greater than 10    |     Enter employee's experience   |     12	     |	  Display Message "The tag color is Red"    |   Valid   |
+|		|    display tag color  		       |				  |				      |		     |						    |           |
+|		|					       |				  |				      |		     |						    |           |
+|    TC_005	|    To accept the employee  experience and    |    experience less than 3        |     Enter employee's experience   |      5	     |	  Display Message "The tag color is Blue"   |  Invalid  |
+|		|    display tag color  		       |				  |				      |		     |						    |           |
+|		|					       |				  |				      |		     | 						    |           |
+|    TC_006	|    To accept the employee  experience and    |    experience between 3 and 5    |     Enter employee's experience   |      2	     |	  Display Message "The tag color is Grey"   |  Invalid  |
+|		|    display tag color  		       |				  |				      |		     |						    |           |
+|		|					       |				  |				      |		     |						    |           |
+|    TC_007	|    To accept the employee  experience and    |    experience between 5 and 10   |     Enter employee's experience   |     14	     |	  Display Message "The tag color is Yellow" |  Invalid  |
+|		|    display tag color  		       |				  |				      |		     |						    |           |
+| 		|					       |				  |				      |		     |						    |           |
+|    TC_008	|    To accept the employee  experience and    |    experience greater than 10    |     Enter employee's experience   |      6	     |	  Display Message "The tag color is Red"    |  Invalid  |
+|		|    display tag color  		       |				  |				      |		     |						    |           |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+
+/********************************************************************************************************************************************************************************************************************
+*File				:A6.2.txt
+*Author Name			:Raja C
+*Description			:Test Cases for Lab assignment 4.8 using the test case template
+*Version			:1.0
+*Last Modified Date		:03-Sept-2015
+*Change Description		:Initial version created
+********************************************************************************************************************************************************************************************************************/
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| TEST CASE ID	|	       TEST CASE SCENARIO	       |          TEST CONDITION	  | 		TEST CASE	      |   TEST DATA  |            EXPECTED RESULT		    |  REMARKS  | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|               |					       |				  |				      |		     |						    |	        |
+|    TC_001	|    To accept students' details  	       |     To validate the choice	  |	       Enter choice	      |	     1	     |It will accept students' details	    	    |	Valid   |
+|               |					       |				  |				      |		     |						    |	        |	
+|    TC_002	|    To print students' details  	       |     To validate the choice       |            Enter choice   	      |      2	     |It will display students' details  	    |   Valid   | 
+|		|    		 			       |				  |				      |		     |						    |	        |
+|    TC_003	|    To search students using student ID       |     To validate the choice       |            Enter choice           |      3	     |It will display students' details based on ID |   Valid   |
+|		|    			  		       |				  |				      |		     |						    |           |
+|    TC_004	|    To sort students based on their marks     |     To validate the choice       |            Enter choice           |      4	     |It will sort students's details based on marks|   Valid   |
+|		|    					       |				  |				      |		     |						    |           |
+|    TC_005	|    To accept the employee  experience and    |     To validate the choice       |            Enter choice           |      5	     |It will raise "Choice Invalid"  		    |  Invalid  |
+|		|    			  		       |				  |				      |		     |						    |           |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+
+
+

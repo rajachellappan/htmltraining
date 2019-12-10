@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>My window Example</title>
+<script language="javascript" src="productdetails.js">
+</script>
+</head>
+<body bgcolor="skyblue">
+<form name="myform" method="post" >
+<table  border="5"  style="border-style:double " align="center"  cellspacing="8" cellpadding="10" style="border-color:white" height="400" width="400" >
+<tr>
+<td  colspan="2"><h1 align="center">Product Details</h1></td>
+</tr>
+
+<tr>
+<td align="left">Category:</td>
+<td align="left">
+<select name="cat" onChange="myData()">
+<option value="select">Select Category</option>
+<option value="electro" >Electronics</option>
+<option value="groce">Grocery</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td align="left">Product:</td>
+<td align="left">
+<select name="prod">
+<option style="visibility:hidden">-------------------</option>
+<option value="20000" style="visibility:hidden">Television</option>
+<option value="30000" style="visibility:hidden">Laptop</option>
+<option value="10000" style="visibility:hidden">Phone</option>
+<option value="40" style="visibility:hidden">Soap</option>
+<option value="90" style="visibility:hidden">Powder</option>
+
+</select>
+</td>
+</tr>
+
+<tr>
+<td align="left">Quantity:</td>
+<td align="left"><input type="number" name="qty" required></input></td>
+</tr>
+
+<tr>
+<td align="left">Total Price:</td>
+<td align="left"><input type="number" name="total" id="totalpay"></input></td>
+</tr>
+
+<tr>
+<td align="center" ><button type="submit" onclick="return Compute()">Submit</button></td>
+<td align="center" ><button type="reset" >Clear</button></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

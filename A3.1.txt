@@ -1,0 +1,25 @@
+/*******************************************************************************************
+*File				:A3.1.txt
+*Author Name			:Raja C
+*Description			:Psedocode for telephone directory
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+RECORD Tname
+ DECLARE dob AS INTEGER
+ DECLARE name AS STRING
+ DECLARE tnum AS INTEGER
+END RECORD
+
+BEGIN
+	DECLARE name1 AS Tname
+	PROMPT "Enter the User Name:" AND STORE IN name1.name
+	PROMPT "Enter the DOB:" AND STORE IN name1.dob
+	PROMPT "Enter the Telephone number:" AND STORE IN name1.tnum
+	PRINT "User Name:", name1.name
+	PRINT "User DOB:", name1.dob
+	PRINT "User Telephone Number:", name1.tnum
+	
+END
+	

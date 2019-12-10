@@ -1,0 +1,42 @@
+/*******************************************************************************************
+*File				:A1.3.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to generate fibonacci series
+*Version			:1.0
+*Last Modified Date		:31-Aug-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE a,b,i AS INTEGER AND STORE 0
+	DECLARE c, N AS INTEGER
+	PROMPT "Enter value for N:" AND STORE IN N
+	FOR i = 0 to N
+		IF(i==0) THEN
+			PRINT a
+		ELSE IF(i==1) THEN
+			a=1;
+			PRINT a
+		ELSE IF(i==2) THEN
+			b=1;
+			PRINT b
+		ELSE
+			c=a+b;
+			PRINT c
+			a=b;
+			b=c:
+		END IF
+			
+		
+	END FOR
+END
+	
+		
+		
+			
+
+
+
+
+
+
+

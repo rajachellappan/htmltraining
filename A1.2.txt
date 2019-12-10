@@ -1,0 +1,21 @@
+/*******************************************************************************************
+*File				:A1.2.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to find tag color by years of experience
+*Version			:1.0
+*Last Modified Date		:31-Aug-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE exp AS INTEGER
+	PROMPT "Enter Employee's Experience:" AND STORE IN exp
+	IF(exp>=0 && exp<=2) THEN
+		PRINT "The tag color is Blue."
+	ELSE IF(exp>=3 && exp<=4) THEN
+		PRINT "The tag color is Grey."
+	ELSE IF(exp>=5 && exp<=9) THEN
+		PRINT "The tag color is Yellow."
+	ELSE
+		PRINT "The tag color is Red."
+	END IF
+END

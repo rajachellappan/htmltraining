@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>My window Example</title>
+<link rel="stylesheet" href="registration.css" type="text/css">
+<script language="javascript" src="registration.js">
+</script>
+</head>
+<body>
+<h1><marquee>Email Registration Form</marquee></h1>
+<form name="myform" method="post" >
+<table  align="left"  cellspacing="10" cellpadding="2" style="border-color:white" height="200" width="1400" >
+<tr>
+<td align="left" colspan="2"><b>Email Account Details</b>(* is required)</td>
+<td rowspan="4" align="right"><p ><div><br>User name should contain only alphabets (a-z), numbers(0-9) and underscore(_)<br><br><br>Password must be atleast 6 characters to ensure better security</div></p></td>
+</tr>
+
+<tr>
+<td align="left">Choose your Login Name:*</td>
+<td align="left"><input type="text" size="30" name="ename" required></input><b>@igate.com</b></td>
+</tr>
+
+<tr>
+<td align="left">Choose Password:*</td>
+<td align="left"><input type="password" name="epass" required></input></td>
+</tr>
+
+<tr>
+<td align="left">Re-type Password:*</td>
+<td align="left"><input type="password" name="repass" required></input></td>
+</tr>
+<tr>
+<td colspan="3"><hr color="clack"size="5"></td>
+</tr>
+
+<tr>
+<td align="left" colspan="2"><b>Password Reminder Information*(All the Fields are required )</b></td>
+</tr>
+
+<tr>
+<td align="left">Hint Question:</td>
+<td align="left">
+<select name="hint">
+<option>[Select One]</option>
+<option>What is your pet name?</option>
+<option>Where is your birth place?</option>
+<option>Who is your favourite teacher?</option>
+</select>
+</td>
+<td rowspan="6" align="right"><p><div><br>Choose a Hint Question whose answer only you will know</div></p></td>
+</tr>
+
+<tr>
+<td align="left"><b>OR</b> Create your Question:</td>
+<td align="left"><input type="text" size="60" name="question" id="question"></input></td>
+</tr>
+
+<tr>
+<td align="left">Hint Answer:</td>
+<td align="left"><input type="text" name="answer" id="answer"></input></td>
+</tr>
+
+<tr>
+<td align="left">Birthdate:</td>
+<td align="left">
+<select><option>01</option ><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select>
+	<input type="month" name="month" id="month">Month,Year</option>
+</td>
+</tr>
+
+<tr>
+<td align="left">Country:</td>
+<td align="left">
+<select name="country">
+<option>[Select Your Country]</option>
+<option>Australia</option>
+<option>India</option>
+<option>United Kingdom</option>
+</select>
+</td>
+</tr>
+
+
+
+<tr>
+<td align="left">City:</td>
+<td align="left">
+<select name="city">
+<option>[Select Your City]</option>
+<option>Chennai</option>
+<option>Mumbai</option>
+<option>Kolkata</option>
+<option>Sydney</option>
+<option>Melbourne</option>
+<option>Brisbane</option>
+<option>London</option>
+<option>Oxford</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td colspan="3"><hr color="clack"size="5"></td>
+</tr>
+
+<tr>
+<td align="left" colspan="2"><b>Tell us about yourself </b></td>
+</tr>
+
+<tr>
+<td align="left" colspan="3">First Name:*
+<input type="text" size="30" name="fname" required></input>&nbsp&nbsp&nbsp
+Last Name:*<input type="text" size="30" name="lname" required></input></td>
+</tr>
+
+<tr>
+<td align="left">Gender:</td>
+<td align="left">
+<select name="gender">
+<option>[Select your Gender]</option>
+<option>Male</option>
+<option>Female</option>
+
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td align="left">State:</td>
+<td align="left">
+<select name="state">
+<option>[Select your State]</option>
+<option>Tamil nadu</option>
+<option>Maharastra</option>
+<option>West bengal</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td align="left">Pin Code:</td>
+<td align="left"><input type="number" name="pin" required></input></td>
+</tr>
+
+<tr>
+<td align="left">Education:</td>
+<td align="left">
+<select name="edu">
+<option>[Select One]</option>
+<option>UG</option>
+<option>PG</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td align="left">Occupation:</td>
+<td align="left">
+<select name="ocu">
+<option>[Select One]</option>
+<option>Working</option>
+<option>Student</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td align="left">Alternate Email Address:</td>
+<td align="left"><input type="email" name="email" size="30" required></input>[optional]</td>
+</tr>
+
+<tr>
+<td colspan="3"><hr color="clack"size="5"></td>
+</tr>
+
+<tr>
+<td align="left" colspan="2"><b>Tell us your Interests</b>[optional]</td>
+</tr>
+
+<tr>
+<td align="left">Based on your selection we will periodically send your informatiom</td>
+</tr>
+<tr>
+<td align="left"><input type="checkbox">Entertainment</input></td>
+<td align="left"><input type="checkbox">Computer & Technology</input></td>
+<td align="left"><input type="checkbox">Real Estate</input></td>
+</tr>
+
+<tr>
+<td align="left"><input type="checkbox">News</input></td>
+<td align="left"><input type="checkbox">Education</input></td>
+<td align="left"><input type="checkbox">Credit Card</input></td>
+</tr>
+<tr>
+<td align="left"><input type="checkbox">Home & Family</input></td>
+<td align="left"><input type="checkbox">Careers</input></td>
+<td align="left"><input type="checkbox">Insurance</input></td>
+</tr>
+<tr>
+<td align="left"><input type="checkbox">Health & Nutrition</input></td>
+<td align="left"><input type="checkbox">Shopping</input></td>
+<td align="left"><input type="checkbox">Banking</input></td>
+</tr>
+<tr>
+<td align="left"><input type="checkbox">Beauty & Fashion</input></td>
+<td align="left"><input type="checkbox">Automobiles</input></td>
+<td align="left"><input type="checkbox">Special Offers</input></td>
+</tr>
+<tr>
+<td align="left"><input type="checkbox">Sports & Games</input></td>
+<td align="left"><input type="checkbox">Investing</input></td>
+</tr>
+<tr>
+<td align="left"><input type="checkbox">Travel</input></td>
+<td align="left"><input type="checkbox">Loans</input></td>
+
+</tr>
+<tr>
+<td colspan="3"><hr color="clack"size="5"></td>
+</tr>
+<tr>
+<td colspan="3"><hr color="clack"size="5"></td>
+</tr>
+
+
+<tr>
+
+<td align="center" ><button type="submit" onclick="return Compute()">Register Me</button></td>
+<td align="center" ><button type="reset" >Reset</button></td>
+
+
+</tr>
+
+</table>
+</form>
+</body>
+</html>

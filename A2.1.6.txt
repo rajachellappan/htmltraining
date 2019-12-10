@@ -1,0 +1,22 @@
+/*******************************************************************************************
+*File				:A2.1.6.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to find whether a number is an Armstrong number
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE a,b,c,d,num,sop AS INTEGER
+	PROMPT "Enter Number:" AND STORE IN num
+	CALCULATE a=num/10
+	CALCULATE x=a/10
+	CALCULATE y=a%10
+	CALCULATE z=num%10
+	CALCULATE sop=(x*x*x)+(y*y*y)+(z*z*z);
+	IF(sop == num) THEN
+		PRINT "It is an Armstrong Number"
+	ELSE IF 
+		PRINT "It is not an Armstrong Number"
+	END IF
+END

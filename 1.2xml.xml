@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<email>
+  <To>Hari</To>
+  <From>Raja</From>
+  <CC>Sriram</CC>
+  <BCC>Adhi</BCC>
+  <subject>Group mail</subject>
+  <Body>Hi FRiends</Body>
+</email>

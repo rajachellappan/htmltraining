@@ -1,0 +1,36 @@
+/*******************************************************************************************
+*File				:A5.1.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to toggle case of characters in one file
+*Version			:1.0
+*Last Modified Date		:03-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE file1 AS FILE
+	DECLARE file2 AS FILE
+	DECLARE s[] AS CHARACTRER ARRAY
+	DECLARE c AS INTEGER AND STORE 0
+	PROMPT "Enter The File Name" AND STORE IN file1
+	IF(fileExists(file1)) THEN
+		OPEN file1
+		OPEN file2
+		IF(fileSize(file1)!=0) THEN
+			WHILE(file1!=EOF)
+			DO
+				READ character from file1 AND STORE IN S[]
+				WHILE(s[c]!='\0')
+				DO
+					IF(s[c]>='a' && s[c]<='z')
+						s[c]=s[c]-32
+					ELSE IF(s[c]>='A' && s[c]<='Z')
+						s[c]=s[c]+32
+					WRITE s[c] TO file2
+					c=c+1
+				END WHILE
+			END WHILE
+		END IF
+		CLOSE file1
+		CLOSE file2
+	END IF
+END

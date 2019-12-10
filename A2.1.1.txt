@@ -1,0 +1,13 @@
+/*******************************************************************************************
+*File				:A2.1.1.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to find difference between two numbers
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+*******************************************************************************************/
+BEGIN
+	DECLARE num, num1 AS INTEGER			  
+	PROMPT "Enter 2 numbers" AND STORE IN num, num1     //Accepts 2 numbers from user
+	PRINT "THe result is", num1-num2;           //Returns the difference of the numbers
+END 

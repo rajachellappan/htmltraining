@@ -1,0 +1,27 @@
+/****************************************************************************************************
+*File				:A3.3.txt
+*Author Name			:Raja C
+*Description			:Pseudocode to write consonents from one file to another file
+*Version			:1.0
+*Last Modified Date		:01-Sept-2015
+*Change Description		:Initial version created
+****************************************************************************************************/
+BEGIN
+	DECLARE file1 AS FILE
+	DECLARE file2 AS FILE
+	DECLARE readChar, consonent AS CHARACTER
+	PROMPT "Enter The File Name" AND STORE IN file1
+	IF(fileExists(file1)) THEN
+		OPEN file1
+		IF(fileSize(file1)!=0 THEN
+			WHILE(file1!=EOF)
+			DO
+				READ character from file1 AND STORE IN readChar
+				IF(readchar!='a'||'e'||'i'||'o'||'u'||'A'||'E'||'I'||'O'||'U') THEN
+					consonent=readChar
+					WRITE consonent to file2
+				END IF
+			END WHILE
+		END IF
+	END IF
+END
